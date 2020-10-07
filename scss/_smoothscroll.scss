@@ -1,5 +1,5 @@
 .demo-1 {
-    --blendmode-title: difference;
+    --blendmode-title:exclusion;
     --imgwidthmax: 300px;
 	--aspect-ratio: 5/3;
     --size-title: 15vw;
@@ -7,18 +7,23 @@
 }
 
 .page {
-	display: grid;
+    display: grid;
 	max-width: 1280px;
     margin: 0 auto;
     padding: 20px;
 	grid-template-columns: 100%;
-	grid-template-areas: 'grid';
+    grid-template-areas: 'grid';
 	will-change: transform;
+}
+
+.bio{
+    grid-area: grid;
+    font-size: 1.5rem;
 }
 
 .content {
 	grid-area: grid;
-    margin: 15vh 0 10vh ;
+    margin: 20vh 0 10vh ;
     
 }
 
@@ -151,9 +156,10 @@
 
 .content__item-title {
 	position: relative;
-	font-size: 150px;
+	font-size: 175px;
     padding: 0 3vw;
     font-family: $other;
+    color: rgb(24, 28, 36);
 	margin: calc(var(--size-title) * -1/2) 0 0 0;
 	align-self: start;
 	line-height: 1;

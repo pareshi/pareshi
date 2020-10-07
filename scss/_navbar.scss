@@ -3,6 +3,7 @@
     grid-template-areas: "title link";
     max-width: 1280px;
     margin: 5vh auto;
+    padding: 0 20px;
 }
 
 .heading{
@@ -33,6 +34,6 @@
 
     .nav_links, .heading{
         align-self: start;
-        justify-self: center;
+        justify-self: start;
     }
 }

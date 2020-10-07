@@ -16,9 +16,10 @@ html, body {
   font-family: "Inter";
 }
 
-body {
+#wrapper {
   max-width: 1280px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 mark {
@@ -33,7 +34,7 @@ mark {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: rgba(136, 149, 221, 0.363);
+  background-color: #e5ff00;
   -webkit-transition: -webkit-transform 350ms ease;
   transition: -webkit-transform 350ms ease;
   transition: transform 350ms ease;
@@ -59,7 +60,7 @@ mark {
 }
 
 .block_link:hover {
-  letter-spacing: .2rem;
+  letter-spacing: .3rem;
 }
 
 .navbar {
@@ -68,6 +69,7 @@ mark {
       grid-template-areas: "title link";
   max-width: 1280px;
   margin: 5vh auto;
+  padding: 0 20px;
 }
 
 .heading {
@@ -104,13 +106,13 @@ mark {
     -ms-flex-item-align: start;
         -ms-grid-row-align: start;
         align-self: start;
-    -ms-grid-column-align: center;
-        justify-self: center;
+    -ms-grid-column-align: start;
+        justify-self: start;
   }
 }
 
 .demo-1 {
-  --blendmode-title: difference;
+  --blendmode-title:exclusion;
   --imgwidthmax: 300px;
   --aspect-ratio: 5/3;
   --size-title: 15vw;
@@ -129,11 +131,18 @@ mark {
   will-change: transform;
 }
 
+.bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: grid;
+  font-size: 1.5rem;
+}
+
 .content {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: grid;
-  margin: 15vh 0 10vh;
+  margin: 20vh 0 10vh;
 }
 
 .content--offset {
@@ -289,9 +298,10 @@ mark {
 
 .content__item-title {
   position: relative;
-  font-size: 150px;
+  font-size: 175px;
   padding: 0 3vw;
   font-family: "Space Mono";
+  color: #181c24;
   margin: calc(var(--size-title) * -1/2) 0 0 0;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
