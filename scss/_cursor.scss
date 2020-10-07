@@ -1,0 +1,33 @@
+.custom-cursor {
+    position: fixed;
+    opacity: 1
+    ;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgba(136, 149, 221, 0.363);
+    transition: transform 350ms ease;
+    transform: translate(-50%, -50%) scale(.3);
+    z-index: 1000;
+}
+
+.custom-cursor--link {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.block_title, .block_link {
+    color: currentColor;
+}
+
+
+.block_link {
+    // padding: 1rem;
+    text-decoration: none;
+    transition: letter-spacing 200ms ease;
+}
+
+.block_link:hover{
+    letter-spacing: .2rem;
+}
