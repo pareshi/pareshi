@@ -159,7 +159,7 @@
 	font-size: 175px;
     padding: 0 3vw;
     font-family: $other;
-    color: rgb(24, 28, 36);
+    color: $text-col;
 	margin: calc(var(--size-title) * -1/2) 0 0 0;
 	align-self: start;
 	line-height: 1;
@@ -250,7 +250,4 @@
 		grid-area: 1 / 1 / 4 / 2;
     }
     
-    .nav__links{
-        float: left;
-    }
 }
