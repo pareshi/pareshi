@@ -67,24 +67,46 @@ mark {
   display: grid;
       grid-template-areas: "title link";
   max-width: 1280px;
-  margin: auto;
+  margin: 5vh auto;
 }
 
 .heading {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
+  mix-blend-mode: difference;
 }
 
 .nav_links {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: link;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.nav_links a {
+  mix-blend-mode: difference;
 }
 
 .nav_links a {
   margin: 0 1.5rem 0 0;
-  float: right;
+}
+
+@media screen and (max-width: 847px) {
+  .navbar {
+        grid-template-areas: "title" "link";
+  }
+  .nav_links, .heading {
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
 }
 
 .demo-1 {

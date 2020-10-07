@@ -2,15 +2,22 @@
     display: grid;
     grid-template-areas: "title link";
     max-width: 1280px;
-    margin: auto;
+    margin: 5vh auto;
 }
 
 .heading{
     grid-area: title;
+    mix-blend-mode:difference;
 }
 
 .nav_links{
     grid-area: link;
+    align-self: end;
+    justify-self: end;
+
+    a{
+        mix-blend-mode:difference;
+    }
 }
 
 // .nav{
@@ -24,5 +31,16 @@
 
 .nav_links a {
     margin: 0 1.5rem 0 0;
-    float: right;
+    
+}
+
+@media screen and (max-width: 847px) {
+    .navbar{
+        grid-template-areas: "title" "link";
+    }
+
+    .nav_links, .heading{
+        align-self: start;
+        justify-self: center;
+    }
 }
