@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
     <title>Pareshi Rajveer</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <meta name="description" content="A set of ideas of animating images and other elements while smooth scrolling a page." />
+    <meta name="keywords" content="smooth scrolling, animation, scroll, website, images, web development, javascript" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" href="https://use.typekit.net/dec4mzz.css">
+    <script>document.documentElement.className="js";var supportsCssVars=function(){var e,t=document.createElement("style");return t.innerHTML="root: { --tmp-var: bold; }",document.head.appendChild(t),e=!!(window.CSS&&window.CSS.supports&&window.CSS.supports("font-weight","var(--tmp-var)")),t.parentNode.removeChild(t),e};supportsCssVars()||alert("Please view this demo in a modern browser that supports CSS Variables.");</script>
 </head>
-<body>
+<body class="demo-1 loading">
+    <main>
+        <div data-scroll class="page page--layout-2">
+            <div class="page__title nav_header">Pareshi Rajveer</div>
+            <div class="nav nav_header">
+                <div class="nav__links">
+                    <a href="">Work</a>
+                    <a href="">Me</a>
+                    <a href="">Resume</a>
+                </div>
+            </div>
+            <div class="content content--full content--alternate">
+                <div class="content__item content__item--wide">
+                    <span class="content__item-number">01</span>
+                    <div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(./img/1.jpg);"></div></div>
+                    <h2 class="content__item-title">01</h2>
+                    <p class="content__item-description">BridgED | Scholarship Portal
+                        <br><a href="" class="block_link" style="float: right; margin-right: 8px; font-weight: 700;"><mark>View Project</mark>
+                            <span><img src="arrow.svg" alt="" style="height:24px; float: right;margin-left: 10px;"></span>
+                        </a>
+                    </p> 
+                </div>
+                <div class="content__item content__item--wide">
+                    <span class="content__item-number">02</span>
+                    <div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(./img/2.jpg);"></div></div>
+                    <h2 class="content__item-title">02</h2>
+                    <p class="content__item-description">EduBridge | Workforce Development
+                        <br><a href="" class="block_link" style="float: left; margin-right: 8px; font-weight: 700;"><mark>View Project</mark>
+                            <span><img src="arrow.svg" alt="" style="height:24px; float: right;margin-left: 10px;"></span>
+                        </a>
+                    </p>
+                </div>
+                <div class="content__item content__item--wide">
+                    <span class="content__item-number">03</span>
+                    <div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(./img/1.jpg);"></div></div>
+                    <h2 class="content__item-title">03</h2>
+                    <p class="content__item-description">CloudSek | Kanban Board
+                        <br><a href="" class="block_link" style="float: right; margin-right: 8px; font-weight: 700;"><mark>View Project</mark>
+                            <span><img src="arrow.svg" alt="" style="height:24px; float: right;margin-left: 10px;"></span>
+                        </a>
+                    </p> 
+                </div>
+                <div class="content__item content__item--wide">
+                    <span class="content__item-number">04</span>
+                    <div class="content__item-imgwrap"><div class="content__item-img" style="background-image: url(./img/2.jpg);"></div></div>
+                    <h2 class="content__item-title">04</h2>
+                    <p class="content__item-description">SproutClass | Empowering the educators
+                        <br><a href="" class="block_link" style="float: left; margin-right: 8px; font-weight: 700;"><mark>View Project</mark>
+                            <span><img src="arrow.svg" alt="" style="height:24px; float: right;margin-left: 10px;"></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/demo.js"></script>
 </body>
 </html>
