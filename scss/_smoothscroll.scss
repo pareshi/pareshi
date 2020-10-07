@@ -140,7 +140,8 @@
 }
 
 .content__item-number {
-    opacity: 0.05;
+	opacity: 0.05;
+	color: $secondary-col;
     font-family: $other;
 	font-size: 25vw;
 	position: absolute;
@@ -186,6 +187,7 @@
 	position: relative;
 	margin: 0;
 	padding: 1rem 0 0 0;
+	mix-blend-mode: var(--blendmode-title);
 }
 
 .content--alternate .content__item-title,

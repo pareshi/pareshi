@@ -14,6 +14,7 @@
 
 html, body {
   font-family: "Inter";
+  color: #141414;
 }
 
 #wrapper {
@@ -23,7 +24,7 @@ html, body {
 }
 
 mark {
-  background-color: #e5ff00;
+  background-color: #E5FF00;
 }
 
 .custom-cursor {
@@ -282,6 +283,7 @@ mark {
 
 .content__item-number {
   opacity: 0.05;
+  color: #0D21A1;
   font-family: "Space Mono";
   font-size: 25vw;
   position: absolute;
@@ -340,6 +342,7 @@ mark {
   position: relative;
   margin: 0;
   padding: 1rem 0 0 0;
+  mix-blend-mode: var(--blendmode-title);
 }
 
 .content--alternate .content__item-title,

@@ -12,7 +12,8 @@
 }
 
 html, body{
-    font-family: $text;   
+    font-family: $text; 
+    color: $text-col;  
 }
 
 #wrapper{
@@ -22,5 +23,5 @@ html, body{
 }
 
 mark{
-    background-color: #e5ff00;
+    background-color: $accent-col;
 }

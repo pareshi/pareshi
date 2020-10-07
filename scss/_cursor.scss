@@ -6,7 +6,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color:#E5FF00;
+    background-color:$accent-col;
     transition: transform 350ms ease;
     transform: translate(-50%, -50%) scale(.3);
     z-index: 1000;
@@ -30,5 +30,5 @@
 
 .block_link:hover{
     letter-spacing: .2rem;
-    color: #E5FF00;
+    color: $accent-col;
 }
