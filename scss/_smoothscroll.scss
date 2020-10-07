@@ -1,14 +1,14 @@
 .demo-1 {
     --blendmode-title:exclusion;
     --imgwidthmax: 300px;
-	--aspect-ratio: 5/3;
+	--aspect-ratio: 32/17;
     --size-title: 15vw;
     --overflow: 40px;
 }
 
 .page {
     display: grid;
-	max-width: 1280px;
+	max-width: 1366px;
     margin: 0 auto;
     padding: 20px;
 	grid-template-columns: 100%;
@@ -48,7 +48,7 @@
 	max-width: 100%;
 	position: relative;
 	will-change: transform;
-	margin-bottom: 10vh;
+	margin-bottom: 5vh;
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
@@ -157,8 +157,8 @@
 
 .content__item-title {
 	position: relative;
-	font-size: 175px;
-    padding: 0 3vw;
+	font-size: 10vw;
+    padding: 0 1vw;
     font-family: $other;
     color: $text-col;
 	margin: calc(var(--size-title) * -1/2) 0 0 0;
@@ -209,7 +209,8 @@
     align-self: start;
     padding: 0 2rem;
     width: 250px;
-    font-size: 0.9rem;
+	font-size: 0.9rem;
+	
 }
 
 .content__item--expand:nth-child(even) .content__item-description {
